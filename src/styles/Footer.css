@@ -1,0 +1,13 @@
+.ultimate {
+    background-color: #173083;
+    height: 20rem;
+    color: white;
+}
+
+.social-image {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 1rem;
+    padding: 1rem;
+}
