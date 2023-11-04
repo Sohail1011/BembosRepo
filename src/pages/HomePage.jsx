@@ -24,15 +24,22 @@ export const HomePage = () => {
         <>
             <Navbar />
 
-            <Swiper>
-                {
-                    data.map((info) => (
-                        <SwiperSlide key={info.id}>
-                            <Cards data={info} />
-                        </SwiperSlide>
-                    ))
-                }
-            </Swiper>
+            <div className="container">
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={4}
+                    className="personales"
+                >
+                    {
+                        data.map((info) => (
+                            <SwiperSlide key={info.id}>
+                                <Cards data={info} />
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
+            </div>
+
 
             <Footer />
         </>
