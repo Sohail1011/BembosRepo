@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { Cards } from "../components/Cards";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/Home.css';
+import 'swiper/css';
 
 export const HomePage = () => {
     const [data, setData] = useState([]);
@@ -21,13 +23,16 @@ export const HomePage = () => {
     return (
         <>
             <Navbar />
-            <section className="personales">
+
+            <Swiper>
                 {
                     data.map((info) => (
-                        <Cards key={info.id} data={info} />
+                        <SwiperSlide key={info.id}>
+                            <Cards data={info} />
+                        </SwiperSlide>
                     ))
                 }
-            </section>
+            </Swiper>
 
             <Footer />
         </>
