@@ -2,9 +2,60 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 17rem;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 31rem;
 }
 
-.tarjeta img {
-    height: 10rem;
-    width: 6rem;
+.imagen{
+    width: 100%;
+    height: 20rem;
 }
+
+.texto{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.subTileOnline{
+    font-size: 23px;
+    align-items: center;
+    white-space: 10px;
+    letter-spacing: -2px;
+}
+
+.precios{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.precioActual{
+    font-size: 25px;
+    font-weight: bold;
+}
+.precioAntiguo{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+    margin: 0 auto;
+}
+.btnOnline{
+    background-color: #173083;
+    padding: 10px 5rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+

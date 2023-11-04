@@ -13,7 +13,8 @@ export const HomePage = () => {
         const res = await fetch("http://localhost:3000/productos");
         const data = await res.json();
         //setData(data[3]);
-        setData(data[3].promociones_personales);
+        console.log(data)
+        setData(data[4].promociones_online);
     }
 
     useEffect(() => {
