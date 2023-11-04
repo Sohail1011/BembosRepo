@@ -23,7 +23,6 @@ export const HomePage = () => {
     return (
         <>
             <Navbar />
-
             <div className="container">
                 <Swiper
                     spaceBetween={1}
@@ -39,8 +38,6 @@ export const HomePage = () => {
                     }
                 </Swiper>
             </div>
-
-
             <Footer />
         </>
     )
