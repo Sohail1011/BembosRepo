@@ -21,7 +21,7 @@ export const Navbar = () => {
                         <p>014191919</p>
                     </section>
                     <section className="person">
-                        <BiUser si />
+                        <BiUser size={"1.5rem"} />
                         <button>Ingresar o crear una cuenta</button>
                     </section>
                 </article>

@@ -33,3 +33,18 @@
 .info p {
     font-size: 1.2rem;
 }
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    margin-left: 1rem;
+    color: #ECBA0B;
+}
+
+.person button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
