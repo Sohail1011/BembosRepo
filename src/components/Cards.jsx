@@ -17,6 +17,7 @@ export const Cards = () => {
         <div>
             <article>
                 <img src={imagenes.img} alt="" />
+                
             </article>
         </div>
     </section>
