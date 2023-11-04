@@ -1,7 +1,4 @@
-import React from 'react'
-
 export const Cards = () => {
-
     // data.map((datos) => {
     //     console.log(datos)
     // })
@@ -11,8 +8,6 @@ export const Cards = () => {
     }
 
   return (
-
-
     <section>
         <div>
             <article>
