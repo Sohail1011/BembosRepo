@@ -1,6 +1,7 @@
 import { BiPhone, BiUser } from "react-icons/bi";
 import '../styles/Header.css';
 import SVGComponent from "../assets/SVGComponent";
+import { Header } from "./Header";
 
 export const Navbar = () => {
     return (
@@ -26,6 +27,7 @@ export const Navbar = () => {
                     </section>
                 </article>
             </nav>
+            <Header />
         </header>
     )
 }
