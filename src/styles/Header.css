@@ -48,3 +48,44 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+.zonas ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.zonas li {
+    list-style: none;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.zonas a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #173083;
+}
+
+.companium button {
+    display: flex;
+    padding: 1rem;
+    background: #ECBA0B;
+    border: none;
+    border-radius: 1rem;
+    color: #173083;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    gap: 1rem;
+}
+
+.companium span {
+    color: red;
+}
