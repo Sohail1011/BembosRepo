@@ -1,0 +1,35 @@
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background: #173083;
+    color: white;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.actions h5 {
+    color: #ECBA0B;
+}
+
+.actions select {
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.info p {
+    font-size: 1.2rem;
+}
