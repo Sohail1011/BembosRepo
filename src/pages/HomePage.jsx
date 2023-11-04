@@ -24,6 +24,7 @@ export const HomePage = () => {
         <>
             <Navbar />
             <div className="container">
+                <h2>Promociones de hamburguesas online</h2>
                 <Swiper
                     spaceBetween={1}
                     slidesPerView={4}
