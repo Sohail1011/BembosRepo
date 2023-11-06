@@ -27,7 +27,7 @@ export const Navbar = () => {
                     </section>
                 </article>
             </nav>
-            <Header />
+            
         </header>
     )
 }

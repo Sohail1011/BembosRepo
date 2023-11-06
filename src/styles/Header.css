@@ -89,3 +89,35 @@
 .companium span {
     color: red;
 }
+
+/*Cart*/
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 500px;
+}
+
+.container-cart-product{
+    position: absolute;
+    background-color: #fff;
+    width: 500px;
+    z-index:3;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.hiden-cart{
+    display: none;
+}

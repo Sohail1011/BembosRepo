@@ -5,6 +5,7 @@ import { Cards } from "../components/Cards";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/Home.css';
 import 'swiper/css';
+import { Header } from "../components/Header";
 
 export const HomePage = () => {
     const [data, setData] = useState([]);
@@ -13,8 +14,9 @@ export const HomePage = () => {
         const res = await fetch("http://localhost:3000/productos");
         const data = await res.json();
         //setData(data[3]);
-        console.log(data)
+        // console.log(data)
         setData(data[4].promociones_online);
+        // console.log(data[4].promociones_online[0])
     }
 
     useEffect(() => {
@@ -24,6 +26,7 @@ export const HomePage = () => {
     return (
         <>
             <Navbar />
+            <Header />
             <div className="container">
                 <h2>Promociones de hamburguesas</h2>
                 <Swiper

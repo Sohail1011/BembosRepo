@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -8,9 +11,23 @@
     height: 31rem;
 }
 
+.tarjeta:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+}
+
+.tarjeta:hover img{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+
 .imagen{
     width: 100%;
     height: 20rem;
+}
+
+article{
+    overflow: hidden;
 }
 
 .texto{
@@ -20,13 +37,15 @@
     flex-direction: column;
     text-align: center;
     background-color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 15px;
 }
 
 .subTileOnline{
     font-size: 23px;
     align-items: center;
     white-space: 10px;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 .precios{
@@ -46,7 +65,7 @@
     color: red;
     text-decoration: line-through;
 }
-a{
+button{
     text-decoration: none;
     margin: 0 auto;
 }
