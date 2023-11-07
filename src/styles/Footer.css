@@ -1,7 +1,13 @@
 .ultimate {
     background-color: #173083;
-    height: 20rem;
+    min-height: 25rem;
     color: white;
+}
+
+.metodos-pago {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
 }
 
 .social-image {
@@ -10,4 +16,37 @@
     cursor: pointer;
     gap: 1rem;
     padding: 1rem;
+}
+
+.locales {
+    display: grid;
+    grid-template-areas: 'us terms'
+        'burger burger';
+        gap: 2.4rem;
+}
+
+.part-1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: us;
+}
+
+.part-2 {
+    display: flex;
+    flex-direction: column;
+    grid-area: terms;
+}
+
+.part-1 a {
+    color: white;
+}
+
+.part-2 a {
+    color: white;
+}
+
+.part-3 {
+    display: flex;
+    justify-content: center;
+    grid-area: burger;
 }
