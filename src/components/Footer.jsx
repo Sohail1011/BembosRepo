@@ -1,8 +1,13 @@
-import BembosLogo from '../assets/BembosLogo'
+import { BembosLogo } from '../assets/BembosLogo'
 import { RiFacebookCircleFill } from 'react-icons/ri';
 import { TiSocialYoutubeCircular } from 'react-icons/ti';
 import { SiTwitter } from 'react-icons/si';
 import { TiSocialInstagramCircular } from 'react-icons/ti';
+import { RiVisaLine } from 'react-icons/ri';
+import { SiMastercard } from 'react-icons/si';
+import { SiAmericanexpress } from 'react-icons/si';
+import { SafetyLogo } from '../assets/SafetyLogo';
+import { FcDocument } from 'react-icons/fc';
 import '../styles/Footer.css'
 
 export const Footer = () => {
@@ -38,9 +43,17 @@ export const Footer = () => {
           <div className="modes">
             <p>FORMAS DE PAGO</p>
           </div>
-          <div className="mastercard"></div>
-          <div className="safety"></div>
-          <div className="document"></div>
+          <div className="mastercard">
+            <RiVisaLine size={"2.5rem"} />
+            <SiMastercard size={"2.5rem"} />
+            <SiAmericanexpress size={"2.5rem"} />
+          </div>
+          <div className="safety">
+            <SafetyLogo />
+          </div>
+          <div className="document">
+            <button><FcDocument size={'1.5rem'} />COMPROBANTES</button>
+          </div>
         </article>
       </section>
     </footer>

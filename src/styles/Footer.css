@@ -22,7 +22,7 @@
     display: grid;
     grid-template-areas: 'us terms'
         'burger burger';
-        gap: 2.4rem;
+    gap: 2.4rem;
 }
 
 .part-1 {
@@ -49,4 +49,22 @@
     display: flex;
     justify-content: center;
     grid-area: burger;
+}
+
+.visa {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.document button {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    background: #E3A804;
+    border: none;
+    border-radius: 0.3rem;
 }
