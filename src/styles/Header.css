@@ -92,18 +92,18 @@
 
 /*Cart*/
 
-.info-cart-product{
+.info-cart-product {
     display: flex;
     justify-content: space-around;
     width: 500px;
     height: 500px;
 }
 
-.container-cart-product{
+.container-cart-product {
     position: absolute;
     background-color: #fff;
     width: 500px;
-    z-index:3;
+    z-index: 3;
     font-size: 1.3rem;
     font-weight: bold;
     margin-top: 4px;
@@ -112,12 +112,12 @@
     border-radius: 10px;
 }
 
-.cart-total{
+.cart-total {
     display: flex;
     justify-content: flex-end;
     padding: 10px;
 }
 
-.hiden-cart{
+.hiden-cart {
     display: none;
 }
