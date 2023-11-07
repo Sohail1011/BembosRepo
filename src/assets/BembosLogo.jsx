@@ -1,4 +1,4 @@
-const BembosLogo = (props) => (
+export const BembosLogo = (props) => (
     <svg
         data-v-2f80d026=""
         xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +14,3 @@ const BembosLogo = (props) => (
         />
     </svg>
 );
-export default BembosLogo;
