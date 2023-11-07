@@ -6,9 +6,11 @@ export const Cards = ({ data }) => {
 
 
     return (
-        <article >
+        <article  className='padre'>
             <div className='tarjeta'>
-                <img className='imagen'  src={data.img} alt={data.nombre} />
+                <figure className='imagen'>
+                    <img   src={data.img} alt={data.nombre} />
+                </figure>
                 <div className='texto'>
                     <h2 className='subTileOnline'>{data.nombre}</h2>
                     <div className='precios'>
