@@ -11,26 +11,26 @@
     height: 31rem;
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 
 }
 
-.tarjeta:hover img{
+.tarjeta:hover img {
     transform: scale(1.2);
     transition: all .5s;
 }
 
-.imagen{
+.imagen {
     width: 100%;
     height: 20rem;
 }
 
-article{
+article {
     overflow: hidden;
 }
 
-.texto{
+.texto {
     width: 100%;
     padding: 1.1rem;
     display: flex;
@@ -41,23 +41,25 @@ article{
     border-radius: 15px;
 }
 
-.subTileOnline{
+.subTileOnline {
     font-size: 23px;
     align-items: center;
     white-space: 10px;
     letter-spacing: -1px;
 }
 
-.precios{
+.precios {
     display: flex;
     justify-content: center;
     margin-top: 5px;
 }
-.precioActual{
+
+.precioActual {
     font-size: 25px;
     font-weight: bold;
 }
-.precioAntiguo{
+
+.precioAntiguo {
     margin-top: 5px;
     margin-left: 10px;
     font-weight: bold;
@@ -65,11 +67,13 @@ article{
     color: red;
     text-decoration: line-through;
 }
-button{
+
+button {
     text-decoration: none;
     margin: 0 auto;
 }
-.btnOnline{
+
+.btnOnline {
     background-color: #173083;
     padding: 10px 5rem;
     border-radius: 20px;
@@ -77,4 +81,3 @@ button{
     font-weight: bold;
     margin-top: 10px;
 }
-

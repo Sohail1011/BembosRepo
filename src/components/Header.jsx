@@ -29,34 +29,29 @@ export const Header = () => {
         <div className={`container-cart-product ${active ? "" : `hiden-cart`}`}>
           {/* {cart.length ? (
             <> */}
-          <div className='row-product hiden'>
-            {
-              view ? <>
-                <div className='cart-product'>
-                  <div className='info-cart-product'>
-                    <p>#</p><p>Nombre</p><p>Producto</p><p>Precio</p>
+          {
+            view ? <>
+              <div className='cart-product'>
+                <div className='info-cart-product'>
+                  <p>#</p><p>Nombre</p><p>Producto</p><p>Precio</p>
 
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="icon-close">
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="icon-close">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>    */}
-                  </div>
                 </div>
-                <div className='cart-total'>
-                  <h3>Total:</h3>
-                  <span>S/0</span>
-                </div>
-              </> :
-                <p>Selecciona un combo.</p>
-            }
-          </div>
-          {/* </>
-          ):( */}
-          {/* <p>El carrito esta vacio</p> */}
-          {/* )} */}
-
-
+              </div>
+              <div className='cart-total'>
+                <h3>Total:</h3>
+                <span>S/0</span>
+              </div>
+            </> :
+              <p>Selecciona un combo.</p>
+          }
         </div>
-
+        {/* </>
+          ):( */}
+        {/* <p>El carrito esta vacio</p> */}
+        {/* )} */}
       </div>
     </article >
   )
