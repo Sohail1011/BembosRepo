@@ -5,7 +5,6 @@ import { Header } from "./Header";
 
 export const Navbar = () => {
     return (
-        <header>
             <nav className="principal">
                 <SVGComponent />
                 <article className="delivery">
@@ -27,7 +26,5 @@ export const Navbar = () => {
                     </section>
                 </article>
             </nav>
-            
-        </header>
     )
 }

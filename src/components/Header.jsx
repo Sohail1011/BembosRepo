@@ -2,12 +2,14 @@ import { RiShoppingCartFill } from 'react-icons/ri';
 import { MdLocalDining } from 'react-icons/md';
 import { useState } from 'react';
 
+
 export const Header = () => {
 
   const [active, setActive] = useState(false)
   const [view, setView] = useState(false)
 
   return (
+    <div >
     <article className='enlaces'>
       <section className="zonas">
         <ul>
@@ -54,5 +56,6 @@ export const Header = () => {
         {/* )} */}
       </div>
     </article >
+    </div>
   )
 }
