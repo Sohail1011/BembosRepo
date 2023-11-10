@@ -17,6 +17,7 @@
     cursor: pointer;
     gap: 1rem;
     padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .locales {
@@ -40,10 +41,20 @@
 
 .part-1 a {
     color: white;
+    text-decoration: none;
 }
 
 .part-2 a {
     color: white;
+    text-decoration: none;
+}
+
+.part-1 a:hover {
+    text-decoration: underline;
+}
+
+.part-2 a:hover {
+    text-decoration: underline;
 }
 
 .part-3 {
@@ -72,5 +83,54 @@
 
 .mastercard {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.modes {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.safety {
+    margin-bottom: 1rem;
+}
+
+.permiso {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.permiso input {
+    height: 2.5rem;
+    width: 14rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0.6rem;
+    color: gray;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border: none;
+    outline: 0;
+}
+
+.permiso button {
+    padding: 0.75rem 2rem;
+    background-color: #E3A804;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.condicionals {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.lectura {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.lectura a {
+    color: white;
 }

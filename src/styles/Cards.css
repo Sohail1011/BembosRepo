@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
-.padre{
+.padre {
     display: flex;
     justify-content: center;
 }
+
 .tarjeta {
     display: flex;
     flex-direction: column;
@@ -16,11 +17,11 @@
     margin-bottom: 1rem;
 }
 
-figure{
+figure {
     background-color: red;
 }
 
-.tarjeta img{
+.tarjeta img {
     height: 300px;
     object-fit: cover;
     transition: all .5s;
@@ -30,7 +31,7 @@ figure{
     transform: scale(1.2);
 }
 
-img{
+img {
     width: 100%;
 }
 
@@ -95,4 +96,5 @@ button {
     font-weight: bold;
     margin-top: 10px;
     font-size: 1.1rem;
+    border: none;
 }

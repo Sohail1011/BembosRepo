@@ -31,8 +31,8 @@ export const Footer = () => {
           </div>
           <div className="part-2">
             <a href="">Políticas de Datos Personales</a>
-            <a href="">Términos y condiciones de</a>
-            <a href="">Promociones</a>
+            <a href="">Términos y condiciones de <br />
+              Promociones</a>
             <a href="">Derechos ARCO</a>
           </div>
           <div className="part-3">
@@ -54,6 +54,19 @@ export const Footer = () => {
           <div className="document">
             <button><FcDocument size={'1.5rem'} />COMPROBANTES</button>
           </div>
+        </article>
+        <article className="registro">
+          <form action="">
+            <label htmlFor="">¿Quieres recibir promociones y noticias?</label>
+            <div className="permiso">
+              <input type="text" placeholder='Tu correo' />
+              <button>Enviar</button>
+            </div>
+            <div className="condicionals">
+              <input type="checkbox" />
+              <label htmlFor="" className='lectura'>He leído y revisado <a href="">los términos y condiciones</a></label>
+            </div>
+          </form>
         </article>
       </section>
     </footer>
