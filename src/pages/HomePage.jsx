@@ -25,8 +25,9 @@ export const HomePage = () => {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Header />
+            
             <Slider/>
             <div className="container">
                 <h2>Promociones de hamburguesas</h2>

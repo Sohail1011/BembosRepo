@@ -5,8 +5,8 @@ import { Header } from "./Header";
 
 export const Navbar = () => {
     return (
-            <nav className="principal">
-                <SVGComponent />
+            <nav >
+                {/* <SVGComponent />
                 <article className="delivery">
                     <section>
                         <BiPhone size={"3rem"} />
@@ -24,7 +24,7 @@ export const Navbar = () => {
                         <BiUser size={"1.5rem"} />
                         <button>Ingresar o crear una cuenta</button>
                     </section>
-                </article>
+                </article> */}
             </nav>
     )
 }
