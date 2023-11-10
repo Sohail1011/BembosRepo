@@ -69,3 +69,8 @@
     border: none;
     border-radius: 0.3rem;
 }
+
+.mastercard {
+    display: flex;
+    gap: 1rem;
+}
