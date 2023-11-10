@@ -4,13 +4,11 @@ import '../styles/Cards.css'
 
 export const Cards = ({ data }) => {
 
-
+// console.log(dataOne)
     return (
         <article  className='padre'>
             <div className='tarjeta'>
-                {/* <figure className='imagen'> */}
                     <img   src={data.img} alt={data.nombre} />
-                {/* </figure> */}
                 <div className='texto'>
                     <h2 className='subTileOnline'>{data.nombre}</h2>
                     <div className='precios'>

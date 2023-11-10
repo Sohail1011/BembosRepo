@@ -126,3 +126,8 @@
 .hiden-cart {
     display: none;
 }
+
+a{
+    display: flex;
+    
+}

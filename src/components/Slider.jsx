@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import './slider.css';
+import '../styles/slider.css';
 import 'swiper/css';
 
 export const Slider = () => {
@@ -33,6 +33,9 @@ export const Slider = () => {
       ))}
     
   </Swiper>
+    <div className='containerBtn'>
+      <button className='sugerens'>Sugerencias</button>
+    </div>
   </div>
   )
 }

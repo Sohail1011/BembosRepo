@@ -13,10 +13,10 @@ export const Header = () => {
     <article className='enlaces'>
       <section className="zonas">
         <ul>
-          <li><a href="">Menú</a></li>
-          <li><a href="">Beneficios</a></li>
-          <li><a href="">Promociones</a></li>
-          <li><a href="">Locales</a></li>
+          <li><a href=""><img src="https://www.bembos.com.pe/_nuxt/img/bmb_menu.1db9cff.svg" alt="" /> Menú</a></li>
+          <li><a href=""><img src="https://www.bembos.com.pe/_nuxt/img/bmb_promociones.b14af19.svg" alt="" /> Promociones</a></li>
+          <li><a href=""><img src="https://www.bembos.com.pe/_nuxt/img/bmb_hamburguesa.3449e24.svg" alt="" /> Hambusguesas</a></li>
+          <li><a href=""><img src="https://www.bembos.com.pe/_nuxt/img/bmb_beneficios.f8fa7ff.svg"  alt="" />  Beneficios</a></li>
         </ul>
       </section>
       <section className='companium'>

@@ -14,7 +14,7 @@ export const HomePage = () => {
     const getData = async () => {
         const res = await fetch("http://localhost:3000/productos");
         const data = await res.json();
-
+        // console.log(data)
         setData(data[4].promociones_online);
 
     }
