@@ -6,7 +6,6 @@ import { BiPhone, BiUser } from "react-icons/bi";
 import '../styles/Header.css';
 import SVGComponent from "../assets/SVGComponent";
 
-
 export const Header = () => {
 
   const [active, setActive] = useState(false)

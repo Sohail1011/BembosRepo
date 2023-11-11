@@ -8,6 +8,7 @@ import { SiMastercard } from 'react-icons/si';
 import { SiAmericanexpress } from 'react-icons/si';
 import { SafetyLogo } from '../assets/SafetyLogo';
 import { FcDocument } from 'react-icons/fc';
+import { BiCopyright } from 'react-icons/bi';
 import '../styles/Footer.css'
 
 export const Footer = () => {
@@ -66,8 +67,15 @@ export const Footer = () => {
               <input type="checkbox" />
               <label htmlFor="" className='lectura'>He leído y revisado <a href="">los términos y condiciones</a></label>
             </div>
+            <div className="reclamaciones"></div>
           </form>
         </article>
+      </section>
+      <section className='disclaimer'>
+        <hr />
+        <div className="autorithy">
+          <BiCopyright /> <p>Falso Ecommerce</p>
+        </div>
       </section>
     </footer>
   )
