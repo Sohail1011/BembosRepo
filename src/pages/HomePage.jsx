@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { Cards } from "../components/Cards";
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -25,7 +24,6 @@ export const HomePage = () => {
 
     return (
         <>
-            {/* <Navbar /> */}
             <Header />
             
             <Slider/>
