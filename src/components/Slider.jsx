@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import '../styles/slider.css';
+import 'swiper/css/pagination';
 import 'swiper/css';
 
 export const Slider = () => {
@@ -24,6 +26,8 @@ export const Slider = () => {
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
+        modules={[Pagination]}
+        pagination={true}
       >
         {imagenes.map((image) => (
           <SwiperSlide key={image.id}>
@@ -33,8 +37,8 @@ export const Slider = () => {
 
       </Swiper>
       <div className='containerBtn'>
-      <button className='sugerens'>Sugerencias</button>
+        <button className='sugerens'>Sugerencias</button>
+      </div>
     </div>
-  </div>
   )
 }

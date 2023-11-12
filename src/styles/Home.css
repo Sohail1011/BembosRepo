@@ -1,8 +1,13 @@
 .personales {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1.5rem;
 }
 
 .container {
     padding: 10px 15rem;
+}
+
+.container h2 {
+    margin-top: 1rem;
 }
