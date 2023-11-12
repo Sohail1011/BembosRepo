@@ -17,13 +17,13 @@ export const BeneficsPage = () => {
         {
         nombre: "clasico amor",
         precio: 42.90,
-        id: 55,
+        id: 56,
         img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-clasico-amor-beneficios.jpg"
         },
         {
         nombre: "La incondicinal",
         precio: 19.90,
-        id: 55,
+        id: 57,
         img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-la-incondicional-beneficios.jpg"
         },
     ]
