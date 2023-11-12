@@ -42,7 +42,7 @@ export const Header = () => {
           </section>
           <section className="person">
             <BiUser size={"1.5rem"} />
-            <button>Ingresar o crear una cuenta</button>
+            <p>Ingresar o crear una cuenta</p>
           </section>
         </article>
       </nav>
