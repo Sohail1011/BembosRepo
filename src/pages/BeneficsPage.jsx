@@ -69,7 +69,7 @@ export const BeneficsPage = () => {
                     {dataAmistad.map((image) => (
                     <SwiperSlide key={image.id}>
                         <div className="containerCarts">
-                            <img src={image.img} alt="" />
+                            <img className="imgBeneficsCards" src={image.img} alt="" />
                             <div className="containerText">
                                 <div className="ContainerFlexText">
                                     <h2>{image.nombre}</h2>

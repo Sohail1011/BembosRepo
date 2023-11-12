@@ -8,7 +8,7 @@ export const Cards = ({ data, texto = 'null' }) => {
     return (
         <article className='padre'>
             <div className='tarjeta'>
-                <img src={data.img} alt={data.nombre} />
+                <img className='imgCards' src={data.img} alt={data.nombre} />
                 <div className='texto'>
                     <h2 className='subTileOnline'>{data.nombre}</h2>
                     <div className='precios'>

@@ -6,22 +6,15 @@
 }
 
 .tarjeta {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 17rem;
+    width: 18rem;
     overflow: hidden;
     border-radius: 15px;
-    height: 30rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 1rem;
 }
 
-figure {
-    background-color: red;
-}
-
-.tarjeta img {
+.tarjeta .imgCards {
     height: 300px;
     object-fit: cover;
     transition: all .5s;
@@ -31,29 +24,17 @@ figure {
     transform: scale(1.2);
 }
 
-img {
+.imgCards{
     width: 100%;
-}
-
-.imagen {
-    width: 100%;
-    height: 20rem;
-}
-
-article {
-    overflow: hidden;
 }
 
 .texto {
-    width: 100%;
-    height: 100%;
-    padding: 1.1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     font-family: 'Oswald', sans-serif;
-    z-index: 1;
+    position: relative;
 }
 
 .subTileOnline {
@@ -86,6 +67,7 @@ article {
 button {
     text-decoration: none;
     margin: 0 auto;
+    margin-bottom: 1.5rem;
 }
 
 .btnOnline {

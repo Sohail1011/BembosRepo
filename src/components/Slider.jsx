@@ -31,7 +31,7 @@ export const Slider = () => {
       >
         {imagenes.map((image) => (
           <SwiperSlide key={image.id}>
-            <img src={image.imgUrl} alt="" />
+            <img className='imgSlider' src={image.imgUrl} alt="" />
           </SwiperSlide>
         ))}
 
