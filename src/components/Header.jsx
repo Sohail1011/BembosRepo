@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { BiPhone, BiUser } from "react-icons/bi";
 import '../styles/Header.css';
 import SVGComponent from "../assets/SVGComponent";
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
 
@@ -12,7 +13,7 @@ export const Header = () => {
   const [view, setView] = useState(false)
 
   return (
-    <nav className="principal" >
+    <header className="principal" >
       <div className='containerHeaderBack'>
         <div className='textOneHeaderBlack'>
           <p className='textHeaderBlack'>Atencion <span className='containerheaderBlackSpan'>en Lima*</span></p>
@@ -23,7 +24,9 @@ export const Header = () => {
         </div>
       </div>
       <nav className='containerHead'>
-        <SVGComponent />
+        <Link to={"/"}>
+          <SVGComponent />
+        </Link>
         <article className="delivery">
           <section>
             <BiPhone size={"3rem"} />
@@ -48,18 +51,18 @@ export const Header = () => {
           <ul>
             <li>
               <div className='containerLinea'>
-                <a href="">
+                <Link to={"/menu"}>
                   <img src="https://www.bembos.com.pe/_nuxt/img/bmb_menu.1db9cff.svg" alt="" />
                   MENÚ
-                </a>
+                </Link>
                 <hr className='lineaHover' />
               </div>
             </li>
             <li>
-              <a className='promHover' href="">
+              <Link className='promHover' to={"/promociones"}>
                 <img src="https://www.bembos.com.pe/_nuxt/img/bmb_promociones.b14af19.svg" alt="" />
                 PROMOCIONES
-              </a>
+              </Link>
               <div className='containerHoverProm'>
                 <p className='text'>Promociones personales</p><hr />
                 <p className='text'>Promociones para 2</p><hr />
@@ -70,19 +73,19 @@ export const Header = () => {
 
             <li>
               <div className='containerLinea'>
-                <a href="">
+                <Link to={"/hamburguesa"}>
                   <img src="https://www.bembos.com.pe/_nuxt/img/bmb_hamburguesa.3449e24.svg" alt="" />
                   HAMBURGUESAS
-                </a>
+                </Link>
                 <hr className='lineaHover' />
               </div>
             </li>
             <li>
               <div className='containerLinea'>
-                <a href="">
+                <Link to={"/beneficios"}>
                   <img src="https://www.bembos.com.pe/_nuxt/img/bmb_beneficios.f8fa7ff.svg" alt="" />
                   BENEFICIOS
-                </a>
+                </Link>
                 <hr className='lineaHover' />
               </div>
             </li>
@@ -125,6 +128,6 @@ export const Header = () => {
           {/* )} */}
         </div>
       </article >
-    </nav>
+    </header>
   )
 }

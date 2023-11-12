@@ -4,6 +4,9 @@ import './index.css'
 import { HomePage } from './pages/HomePage.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { BeneficsPage } from './pages/BeneficsPage.jsx';
+import { MenuPage } from './pages/MenuPage.jsx';
+import { PromotionsPage } from './pages/PromotionsPage.jsx';
+import { BurgerPage } from './pages/BurgerPage.jsx';
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +16,18 @@ const routes = createBrowserRouter([
   {
     path: "/beneficios",
     element: <BeneficsPage />
+  },
+  {
+    path: "/menu",
+    element: <MenuPage />
+  },
+  {
+    path: "/promociones",
+    element: <PromotionsPage />
+  },
+  {
+    path: "/hamburguesa",
+    element: <BurgerPage />
   }
 ])
 
