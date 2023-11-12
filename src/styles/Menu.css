@@ -1,0 +1,49 @@
+.centrado {
+    padding: 25px 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location {
+    height: 5rem;
+    width: 65rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: space-around;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.ubicacion h4 {
+    font-weight: 600;
+}
+
+.options button {
+    padding: 1rem;
+    background: #21388B;
+    border: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+    outline: 0;
+}
+
+.centrado h2 {
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.cyber {
+    display: flex;
+    flex-direction: column;
+}
