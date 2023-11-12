@@ -31,7 +31,7 @@ export const BeneficsPage = () => {
     return (
         <>
             <Header />
-            <div className="container">
+            <div className="containerBenefics">
                 <div className="containerElement">
                     <h1>DISFRUTA DE NUESTROS BENEFICIOS BENBOS</h1>
                     <div className="containerImgHearts">
@@ -61,18 +61,23 @@ export const BeneficsPage = () => {
                             <p className="textProm">PROMOCIONES POPR TU AMISTAD</p>
                         </div>
                     </div>
-
-                    <h2>BeneficsPage</h2>
-                    <Swiper
+                    <div className="containerCardsPadreBenefics">
+                    <Swiper 
                     spaceBetween={50}
                     slidesPerView={2}
                 >
                     {dataAmistad.map((image) => (
                     <SwiperSlide key={image.id}>
-                        <img src={image.img} alt="" />
-                        <div>
-                            <h2>{image.nombre}</h2>
-                            <p>{image.precio}</p>
+                        <div className="containerCarts">
+                            <img src={image.img} alt="" />
+                            <div className="containerText">
+                                <div className="ContainerFlexText">
+                                    <h2>{image.nombre}</h2>
+                                    <p className="precioBenefics">S/{image.precio}</p>
+                                    <button className="BtnAcumulaPts">!Acumula PTS!</button>
+                                </div>
+                                <button className="BtnComprasBenefics">COMPRAR</button>
+                            </div>
                         </div>
                         
                         
@@ -80,14 +85,15 @@ export const BeneficsPage = () => {
                     ))}
 
                     </Swiper>
-                    <div>
-                        <h2>PREGUNTAS FRECUENTES</h2>
-                        <div>
-                            <p>¿Como funcionan los puntos?</p>
-                            <p>¿Cuales son los beneficios?</p>
-                            <p>¿Hay beneficios por el método de pago?</p>
-                            <p>¿Los cupones de descuento tiene fecha límite para usar?</p>
-                            <p>¿Hay beneficios en compras por la APP</p>
+                    </div>
+                    <div className="containerPreguntasFrecuentes">
+                        <h2 className="titlePreguntas">PREGUNTAS FRECUENTES</h2>
+                        <div className="containerPreguntas">
+                            <p className="preguntasBenefics">¿Como funcionan los puntos?</p>
+                            <p className="preguntasBenefics">¿Cuales son los beneficios?</p>
+                            <p className="preguntasBenefics">¿Hay beneficios por el método de pago?</p>
+                            <p className="preguntasBenefics">¿Los cupones de descuento tiene fecha límite para usar?</p>
+                            <p className="preguntasBenefics">¿Hay beneficios en compras por la APP</p>
                         </div>
                     </div>
                 </div>

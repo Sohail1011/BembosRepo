@@ -5,16 +5,20 @@
 
 
 
-.container{
-    background-color: lightblue;
+.containerBenefics{
     font-family:'Oswald', sans-serif;
+    background-color: #f6f7f8;
 }
 
 .containerElement{
-    background-color: lightcoral;
     border-radius: 15px;
     overflow: hidden;
     margin-top: 2rem;
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h1{
@@ -61,6 +65,7 @@ h1{
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 15px;
+    margin-bottom: 4rem;
 }
 
 .containerFriendzon{
@@ -83,3 +88,84 @@ h1{
     font-weight: 700;
     color: #21388b;
 }
+
+/*.......................*/
+
+.containerCardsPadreBenefics{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.containerCarts{
+    display: flex;
+    width: 100%px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.containerText{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.precioBenefics{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.BtnAcumulaPts{
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #ffb500;
+    color: black;
+    font-weight: 900;
+    font-size: 12px;
+    border: none;
+}
+
+.BtnComprasBenefics{
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: #21388b;
+    border: none;
+    color: white;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+
+/*...............................*/
+
+.containerPreguntasFrecuentes{
+    margin-top: 5rem;
+    color: #21388b;
+    font-size: 20px;
+}
+
+.containerPreguntas{
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.titlePreguntas{
+    text-align: center;
+}
+
+.preguntasBenefics{
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 10px;
+    color: #21388b;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+
+
