@@ -4,22 +4,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .location {
     height: 5rem;
-    width: 65rem;
+    width: 100%;
     background-color: white;
     display: flex;
     align-items: center;
     border-radius: 0.5rem;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .ubicacion {
     display: flex;
     align-items: center;
-    gap: 0.1rem;
+    gap: 2rem;
 }
 
 .ubicacion h4 {
@@ -38,12 +41,26 @@
 }
 
 .centrado h2 {
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    font-size: 1.7rem;
 }
 
 .cyber {
+    width: 100%;
+}
+
+.globo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+.presentacion {
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+}
+
+.presentacion img {
+    border-radius: 1.5rem;
 }
