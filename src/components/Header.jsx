@@ -23,7 +23,10 @@ export const Header = () => {
         </div>
       </div>
       <nav className='containerHead'>
-      <SVGComponent />
+
+          <a href=""><SVGComponent /></a>
+
+      
       <article className="delivery">
         <section>
           <BiPhone size={"3rem"} />

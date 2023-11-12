@@ -12,7 +12,7 @@ export const Slider = () => {
       id: 2, imgUrl: "https://www.bembos.com.pe/_ipx/q_75,s_1280x400/https://d31npzejelj8v1.cloudfront.net/media/wysiwyg/1687457355_1280x400-duo-queso-tocino-julio-nuevo.webp"
     },
     {
-      id: 3, imgUrl: "https://www.bembos.com.pe/_ipx/q_75,s_1280x400/https://d31npzejelj8v1.cloudfront.net/media/wysiwyg/1687457355_1280x400-duo-queso-tocino-julio-nuevo.webp"
+      id: 3, imgUrl: "https://www.bembos.com.pe/_ipx/q_75,s_1280x400/https://d31npzejelj8v1.cloudfront.net/media/wysiwyg/1699029233_falta-poco-cyber-noviembre-2023-1280x400.webp"
     }
 
   ]
