@@ -1,0 +1,85 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@300;400;700;800&display=swap');
+
+
+
+.container{
+    background-color: lightblue;
+    font-family:'Oswald', sans-serif;
+}
+
+.containerElement{
+    background-color: lightcoral;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+h1{
+    color: #ffb500;
+    background-color: #21388b;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImgHearts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.buttonHearts{
+    height: 7rem;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #21388b;
+}
+
+
+/*......................*/
+.imagen{
+    width: 30px;
+    height: 30px;
+}
+
+.containerPoints{
+    display: flex;
+    background-color: #ffb500;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 3.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+.containerFriendzon{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.spanOne{
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    color: #21388b;
+    font-weight: 400;
+}
+
+.textProm{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #21388b;
+}
