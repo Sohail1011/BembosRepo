@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import { Cards } from "../components/Cards";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/Home.css';
+import '../styles/Cards.css';
 import 'swiper/css';
 import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
@@ -10,6 +11,7 @@ import { Slider } from "../components/Slider";
 export const HomePage = () => {
     const [data, setData] = useState([]);
     const [menu, setMenu] = useState([]);
+    // const [burger, setBurger] = useState([]);
 
     const getData = async () => {
         const res = await fetch("http://localhost:3000/productos");
@@ -24,9 +26,16 @@ export const HomePage = () => {
         setMenu(request[5].menu);
     }
 
+    // const getBurger = async () => {
+    //     const response = await fetch("http://localhost:3000/productos");
+    //     const dataBurger = await response.json();
+    //     setBurger(dataBurger[1].hamburguesas);
+    // }
+
     useEffect(() => {
         getData();
         getMenu();
+        // getBurger();
     }, []);
 
     return (
@@ -34,8 +43,8 @@ export const HomePage = () => {
             <Header />
             <Slider />
             <div className="container">
-                <h2>Promociones de hamburguesas</h2>
-                <Swiper
+                <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
+                <Swiper 
                     spaceBetween={1}
                     slidesPerView={4}
                     className="personales"
@@ -43,12 +52,19 @@ export const HomePage = () => {
                     {
                         data.map((info) => (
                             <SwiperSlide key={info.id}>
-                                <Cards data={info} texto={"Ver más"} />
+                                <div className="containerPaco">
+                                  <div className="containerCardsBembos">
+                                  <Cards data={info} texto={"Ver más"} />
+                                  </div>
+                                </div>
                             </SwiperSlide>
                         ))
                     }
                 </Swiper>
-                <h2>Menu de hamburguesas</h2>
+
+                <h2 className="titleTwo">MENU DE HAMBURGUESAS</h2>
+
+                
                 <Swiper
                     spaceBetween={1}
                     slidesPerView={4}
@@ -57,7 +73,11 @@ export const HomePage = () => {
                     {
                         menu.map((anuncio) => (
                             <SwiperSlide key={anuncio.nombre}>
-                                <Cards data={anuncio} texto={"Ver Todos"} />
+                                <div className="containerPaco">
+                                 <div className="containerCardsBembos">
+                                 <Cards data={anuncio} texto={"Ver Todos"} />
+                                 </div>
+                                </div>
                             </SwiperSlide>
                         ))
                     }

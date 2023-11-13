@@ -6,7 +6,7 @@ export const Cards = ({ data, texto = 'null' }) => {
 
     // console.log(dataOne)
     return (
-        <article className='padre'>
+        // <article className='padre'>
             <div className='tarjeta'>
                 <img className='imgCards' src={data.img} alt={data.nombre} />
                 <div className='texto'>
@@ -18,6 +18,6 @@ export const Cards = ({ data, texto = 'null' }) => {
                     <button className='btnOnline'>{texto}</button>
                 </div>
             </div>
-        </article>
+        // </article>
     )
 } 

@@ -14,7 +14,7 @@
     margin-bottom: 1.5rem;
 }
 
-h1 {
+.h1Benefics {
     color: #ffb500;
     background-color: #21388b;
     height: 4rem;
@@ -107,6 +107,8 @@ h1 {
 .imgBeneficsCards{
     transition: all .5s;
     width: 100%;
+    margin: 0;
+    object-fit: cover;
 }
 
 .containerText {
@@ -116,18 +118,13 @@ h1 {
     justify-content: space-between;
     text-align: center;
     position: relative;
-    /* z-index: 1000; */
-    background-color: red;
+    background-color: white;
 }
-
-.ContainerFlexText{
-    /* background-color: white; */
-}
-
 .precioBenefics {
     font-size: 25px;
     font-weight: 400;
 }
+
 
 .BtnAcumulaPts {
     padding: 5px 20px;
