@@ -4,8 +4,22 @@ import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { Autoplay, Navigation } from "swiper/modules";
 import '../styles/Menu.css'
+import { Vasos } from "../components/Vasos";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export const MenuPage = () => {
+
+    const [menu, setMenu] = useState([]);
+
+    useEffect(() => {
+        async function getMenu() {
+            const res = await fetch("http://localhost:3000/productos");
+            const req = await res.json();
+            setMenu(req[5].menu);
+        }
+        getMenu();
+    }, []);
 
     const ingredientes = [
         {
@@ -50,6 +64,13 @@ export const MenuPage = () => {
                             ))
                         }
                     </Swiper>
+                </div>
+                <div className="refrescos">
+                    {
+                        menu.map((m) => (
+                            <Vasos key={m.nombre} informacion={m.nombre} picture={m.img} />
+                        ))
+                    }
                 </div>
             </div>
             <Footer />
