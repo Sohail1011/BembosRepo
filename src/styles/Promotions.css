@@ -1,0 +1,57 @@
+.casilla {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    height: 5rem;
+    gap: 1rem;
+}
+
+.casilla button {
+    padding: 0.4rem 1.5rem;
+    background: #F6F7F8;
+    border-radius: 1rem;
+    border: 0.2rem solid #E2E2E2;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+.renglones {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+.renglones h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #173083;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 2.5rem;
+    width: 14rem;
+    border-radius: 1.2rem;
+    padding-left: 1rem;
+    border: 1px solid #C3C3C3;
+}
+
+.wrapper input {
+    border: none;
+    background: transparent;
+    outline: 0;
+    font-size: 1rem;
+    width: 10.7rem;
+}
+
+.wrapper button {
+    border: none;
+    background: transparent;
+}
