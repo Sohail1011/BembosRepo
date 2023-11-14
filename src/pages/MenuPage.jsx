@@ -21,6 +21,10 @@ export const MenuPage = () => {
         getMenu();
     }, []);
 
+    useEffect(() => {
+        document.title = "Menu";
+    })
+
     const ingredientes = [
         {
             id: 1,

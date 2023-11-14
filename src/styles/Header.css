@@ -62,6 +62,10 @@
     gap: 0.4rem;
 }
 
+.actions select {
+    outline: none;
+}
+
 .actions h5 {
     color: #ECBA0B;
 }

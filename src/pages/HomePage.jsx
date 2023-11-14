@@ -25,6 +25,10 @@ export const HomePage = () => {
         setMenu(request[5].menu);
     }
 
+    useEffect(()=>{
+        document.title = "Inicio"
+    },[])
+
     useEffect(() => {
         getData();
         getMenu();
