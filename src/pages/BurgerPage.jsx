@@ -23,6 +23,7 @@ export const BurgerPage = () => {
     return (
         <>
             <Header/>
+            <Outlet/>
             <div className="containerPadreBurger">
                 <h2 className="TitleOneBurger">¡DISFRUTA DE NUESTRAS HAMBURGUESAS A LA PARRILLA!</h2>
                 <div className="gridBurgerPage">     
@@ -53,7 +54,7 @@ export const BurgerPage = () => {
                     </div>
                 </div>
             </div>
-            <Outlet/>
+            
             <Footer />
         </>
     )
