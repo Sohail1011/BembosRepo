@@ -11,7 +11,6 @@ import { Slider } from "../components/Slider";
 export const HomePage = () => {
     const [data, setData] = useState([]);
     const [menu, setMenu] = useState([]);
-    // const [burger, setBurger] = useState([]);
 
     const getData = async () => {
         const res = await fetch("http://localhost:3000/productos");
@@ -26,16 +25,9 @@ export const HomePage = () => {
         setMenu(request[5].menu);
     }
 
-    // const getBurger = async () => {
-    //     const response = await fetch("http://localhost:3000/productos");
-    //     const dataBurger = await response.json();
-    //     setBurger(dataBurger[1].hamburguesas);
-    // }
-
     useEffect(() => {
         getData();
         getMenu();
-        // getBurger();
     }, []);
 
     return (

@@ -1,4 +1,124 @@
 
-.paco{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+
+.containerPadreBurger{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.TitleOneBurger{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    color: #21388b;
+}
+
+.gridBurgerPage{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 60px;
+    margin-top: 3rem;
+    
+}
+
+.containerBurgerCards{
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    
+}
+
+.imgBurger{
+    width: 100%;
+    height: 350px;
+    object-fit:cover;
+    transition: all .5s;
+    height: 250px;
+}
+
+.imgBurger:hover{
+    transform:scale(1.2);
+}
+
+.containerTextBurger{
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.titleCardBurger{
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: -1px;
+}
+
+.precioBurger{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.enlaceCardBurger{
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.btnBurger{
+    /* position: absolute; */
+    padding: 10px 6rem;
+    /* margin: -2rem; */
+    background-color: #193694;
+    color: white;
+    font-size: 20px;
+    border-radius: 25px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.containerTitlePreguntas{
+    /* background-color: red; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.titleTextPreguntasBurger{
+    font-size: 1.8rem;
+    color: #193694;
+    margin-top: 3rem;
+}
+
+.textPreguntasBurger{
+    color: #97998f;
+    font-family: none;
+    margin-top: 2rem;
+}
+
+.titlePreguntasBurger{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #193694;
+    margin-top: 3rem;
+}
+
+.containerPreguntasBurger{
+    padding: 1rem;
+}
+
+.preguntasBurger{
+    padding: 12px;
+    border: 1px solid black;
+    margin-top: 10px;
+    color: #21388b;
+    font-weight: 800;
+    font-size: 18px;
 }

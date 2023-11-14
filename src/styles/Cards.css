@@ -80,19 +80,17 @@
     text-decoration: line-through;
 }
 
-button {
-    text-decoration: none;
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-}
-
 .btnOnline {
     background-color: #173083;
-    padding: 15px 5rem;
     border-radius: 20px;
     color: white;
     font-weight: bold;
-    margin-top: 10px;
     font-size: 1.1rem;
-    border: none;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }

@@ -8,11 +8,12 @@ import { BeneficsPage } from './pages/BeneficsPage.jsx';
 import { MenuPage } from './pages/MenuPage.jsx';
 import { PromotionsPage } from './pages/PromotionsPage.jsx';
 import { BurgerPage } from './pages/BurgerPage.jsx';
+import { BurgerChildren } from './pages/BurgerChildren.jsx';
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />
+    element: <HomePage />,
   },
   {
     path: "/beneficios",
@@ -28,8 +29,14 @@ const routes = createBrowserRouter([
   },
   {
     path: "/hamburguesa",
-    element: <BurgerPage />
-  }
+    element: <BurgerPage />,
+    children: [
+      {
+        path: "contacts/:contactid",
+        element: <BurgerChildren/>
+      },
+    ],
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

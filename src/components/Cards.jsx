@@ -15,7 +15,7 @@ export const Cards = ({ data, texto = 'null' }) => {
                         <p className='precioActual'>{data.precio_actual}</p>
                         <p className='precioAntiguo'>{data.precio_antiguo}</p>
                     </div>
-                    <button className='btnOnline'>{texto}</button>
+                    <a className='btnOnline'>{texto}</a>
                 </div>
             </div>
         // </article>
