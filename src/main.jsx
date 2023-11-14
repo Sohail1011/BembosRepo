@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import 'swiper/css';
+import 'swiper/css/grid';
 import 'swiper/css/navigation';
 import { HomePage } from './pages/HomePage.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -33,7 +35,7 @@ const routes = createBrowserRouter([
     children: [
       {
         path: "contacts/:contactid",
-        element: <BurgerChildren/>
+        element: <BurgerChildren />
       },
     ],
   },
@@ -41,7 +43,7 @@ const routes = createBrowserRouter([
   //   path: "/burgerchildren",
   //   element: <BurgerChildren/>,
   // }
-    
+
 
 ])
 
