@@ -33,7 +33,7 @@ export const BurgerPage = () => {
         <>
             <Header/>
             <Outlet/>
-            <div className="ContainerFloranteBurger noneFlotante">
+            <div className="ContainerFloranteBurger noneFlotante" >
                     <h2 className="itemBurger">Combos</h2>
                     <h2 className="itemBurger burger">Hamburguesas</h2>
                     <h2 className="itemBurger">Pollo</h2>
