@@ -20,11 +20,27 @@ export const BurgerPage = () => {
         getBurger();
     }, []);
 
+
+    window.addEventListener("scroll", (e) => {
+        console.log(e)
+    })
+
     return (
         <>
             <Header/>
             <Outlet/>
+            <div className="ContainerFloranteBurger noneFlotante">
+                    <h2 className="itemBurger">Combos</h2>
+                    <h2 className="itemBurger burger">Hamburguesas</h2>
+                    <h2 className="itemBurger">Pollo</h2>
+                    <h2 className="itemBurger">Loncherítas</h2>
+                    <h2 className="itemBurger">Complementos</h2>
+                    <h2 className="itemBurger">Bebidas</h2>
+                    <h2 className="itemBurger">Helados</h2>
+                    <h2 className="itemBurger">Inka Chips</h2>
+                </div>
             <div className="containerPadreBurger">
+                
                 <h2 className="TitleOneBurger">¡DISFRUTA DE NUESTRAS HAMBURGUESAS A LA PARRILLA!</h2>
                 <div className="gridBurgerPage">     
                     {burger.map((imgBuger) => (
@@ -54,7 +70,6 @@ export const BurgerPage = () => {
                     </div>
                 </div>
             </div>
-            
             <Footer />
         </>
     )

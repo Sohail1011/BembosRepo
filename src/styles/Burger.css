@@ -2,6 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 
+.ContainerFloranteBurger{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* width: 85%; */
+    /* justify-content: space-evenly; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position:fixed;
+    width: 100%;
+    /* margin: 2rem auto 2rem auto; */
+    z-index: 9;
+    /* position: relative; */
+}
+
+.noneFlotante{
+    /* border-radius: 15px;
+    width: 80%; */
+}
+
+.itemBurger{
+    margin-left: 3rem;
+    font-weight: 500;
+    /* border: 2px solid red; */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.burger{
+    background-color: #ffb500;
+    border-radius: 50px;
+}
+
+.itemBurger:hover{
+    border-radius: 50px;
+    background-color:#f0f0f0 ;
+    color: #4469a5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .containerPadreBurger{
     background-color: white;
     width: 70%;

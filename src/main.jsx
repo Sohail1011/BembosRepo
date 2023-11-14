@@ -37,6 +37,12 @@ const routes = createBrowserRouter([
       },
     ],
   },
+  // {
+  //   path: "/burgerchildren",
+  //   element: <BurgerChildren/>,
+  // }
+    
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
