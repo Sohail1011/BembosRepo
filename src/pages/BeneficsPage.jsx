@@ -4,27 +4,32 @@ import { Header } from "../components/Header"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "../estilosRouter/Benefics.css"
+import { useEffect } from "react";
 
 export const BeneficsPage = () => {
 
-    const dataAmistad =[
+    useEffect(() => {
+        document.title = "Beneficios";
+    }, [])
+
+    const dataAmistad = [
         {
-        nombre: "Pareja real",
-        precio: 39.90,
-        id: 55,
-        img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pareja-real-beneficios.jpg"
+            nombre: "Pareja real",
+            precio: 39.90,
+            id: 55,
+            img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-pareja-real-beneficios.jpg"
         },
         {
-        nombre: "clasico amor",
-        precio: 42.90,
-        id: 56,
-        img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-clasico-amor-beneficios.jpg"
+            nombre: "clasico amor",
+            precio: 42.90,
+            id: 56,
+            img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-clasico-amor-beneficios.jpg"
         },
         {
-        nombre: "La incondicinal",
-        precio: 19.90,
-        id: 57,
-        img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-la-incondicional-beneficios.jpg"
+            nombre: "La incondicinal",
+            precio: 19.90,
+            id: 57,
+            img: "https://www.bembos.com.pe/_ipx/q_60,w_260/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/1/3/1370x800-la-incondicional-beneficios.jpg"
         },
     ]
 
@@ -62,29 +67,29 @@ export const BeneficsPage = () => {
                         </div>
                     </div>
                     <div className="containerCardsPadreBenefics">
-                    <Swiper 
-                    spaceBetween={50}
-                    slidesPerView={2}
-                >
-                    {dataAmistad.map((image) => (
-                    <SwiperSlide key={image.id}>
-                        <div className="containerCarts">
-                            <img className="imgBeneficsCards" src={image.img} alt="" />
-                            <div className="containerText">
-                                <div className="ContainerFlexText">
-                                    <h2>{image.nombre}</h2>
-                                    <p className="precioBenefics">S/{image.precio}</p>
-                                    <button className="BtnAcumulaPts">!Acumula PTS!</button>
-                                </div>
-                                <button className="BtnComprasBenefics">COMPRAR</button>
-                            </div>
-                        </div>
-                        
-                        
-                    </SwiperSlide>
-                    ))}
+                        <Swiper
+                            spaceBetween={50}
+                            slidesPerView={2}
+                        >
+                            {dataAmistad.map((image) => (
+                                <SwiperSlide key={image.id}>
+                                    <div className="containerCarts">
+                                        <img className="imgBeneficsCards" src={image.img} alt="" />
+                                        <div className="containerText">
+                                            <div className="ContainerFlexText">
+                                                <h2>{image.nombre}</h2>
+                                                <p className="precioBenefics">S/{image.precio}</p>
+                                                <button className="BtnAcumulaPts">!Acumula PTS!</button>
+                                            </div>
+                                            <button className="BtnComprasBenefics">COMPRAR</button>
+                                        </div>
+                                    </div>
 
-                    </Swiper>
+
+                                </SwiperSlide>
+                            ))}
+
+                        </Swiper>
                     </div>
                     <div className="containerPreguntasFrecuentes">
                         <h2 className="titlePreguntas">PREGUNTAS FRECUENTES</h2>
