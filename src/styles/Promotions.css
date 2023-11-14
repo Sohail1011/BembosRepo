@@ -55,3 +55,40 @@
     border: none;
     background: transparent;
 }
+
+.ads {
+    margin-left: 22rem;
+    margin-right: 22rem;
+}
+
+.ads hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 71rem;
+    border: 1px solid grey;
+}
+
+.ads h2 {
+    margin-right: 50rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.almuerzo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.almuerzo hr {
+    border: 1px solid black;
+}
+
+.refrescos {
+    width: 100%;
+    height: 100%;
+}
+
+.info-matter {
+    display: flex;
+    align-items: center;
+}
