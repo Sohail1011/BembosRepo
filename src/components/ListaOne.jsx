@@ -1,3 +1,7 @@
+// import React, { useEffect, useState } from 'react'
+// import { SwiperSlide } from 'swiper/react';
+// import { Swiper } from 'swiper/types';
+
 import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
 import { Cards } from "../components/Cards";
@@ -8,40 +12,38 @@ import 'swiper/css';
 import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
 import '../styles/slider.css';
-import { Outlet } from "react-router-dom";
 
-export const HomePage = () => {
-    // const [data, setData] = useState([]);
-    // const [menu, setMenu] = useState([]);
 
-    // const getData = async () => {
-    //     const res = await fetch("http://localhost:3000/productos");
-    //     const data = await res.json();
-    //     // console.log(data)
-    //     setData(data[4].promociones_online);
-    // }
+export const ListaOne = () => {
 
-    // const getMenu = async () => {
-    //     const response = await fetch("http://localhost:3000/productos");
-    //     const request = await response.json();
-    //     setMenu(request[5].menu);
-    // }
+  const [data, setData] = useState([]);
+  const [menu, setMenu] = useState([]);
 
-    // useEffect(()=>{
-    //     document.title = "Inicio"
-    // },[])
+  const getData = async () => {
+      const res = await fetch("http://localhost:3000/productos");
+      const data = await res.json();
+      // console.log(data)
+      setData(data[4].promociones_online);
+  }
 
-    // useEffect(() => {
-    //     getData();
-    //     getMenu();
-    // }, []);
+  const getMenu = async () => {
+      const response = await fetch("http://localhost:3000/productos");
+      const request = await response.json();
+      setMenu(request[5].menu);
+  }
 
-    return (
-        <>
-            <Header />
-            <Slider />
-            <Outlet/>
-            {/* <div className="container">
+  useEffect(()=>{
+      document.title = "Inicio"
+  },[])
+
+  useEffect(() => {
+      getData();
+      getMenu();
+  }, []);
+
+  return (
+    <>
+            <div className="container">
                 <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
                 <Swiper 
                     spaceBetween={1}
@@ -81,9 +83,7 @@ export const HomePage = () => {
                         ))
                     }
                 </Swiper>
-            </div> */}
-
-            <Footer />
-        </>
-    )
+            </div>
+    </>
+  )
 }

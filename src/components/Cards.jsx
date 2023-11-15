@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 // import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/Cards.css'
 
 export const Cards = ({ data, texto = 'null' }) => {
@@ -15,7 +16,7 @@ export const Cards = ({ data, texto = 'null' }) => {
                         <p className='precioActual'>{data.precio_actual}</p>
                         <p className='precioAntiguo'>{data.precio_antiguo}</p>
                     </div>
-                    <a className='btnOnline'>{texto}</a>
+                    <Link className='btnOnline' to={`/cards/${data.id}`}  >{texto}</Link>
                 </div>
             </div>
         // </article>

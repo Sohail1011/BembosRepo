@@ -12,11 +12,22 @@ import { PromotionsPage } from './pages/PromotionsPage.jsx';
 import { BurgerPage } from './pages/BurgerPage.jsx';
 import { BurgerChildren } from './pages/BurgerChildren.jsx';
 import { Listado } from './components/Listado.jsx';
+import { ListaOne } from './components/ListaOne.jsx';
+import { BeneficsChildren } from './pages/BeneficsChildren.jsx';
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+    children: [
+      {
+        index:true,element: <ListaOne/>
+      },
+      {
+        path:"cards/:id",
+        element: <BeneficsChildren/>
+      }
+    ]
   },
   {
     path: "/beneficios",
