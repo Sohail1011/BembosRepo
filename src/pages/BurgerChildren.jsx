@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { Outlet, useParams } from 'react-router-dom'
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
@@ -35,6 +35,9 @@ export const BurgerChildren = () => {
         {data.map((imageness) => (
             <img src={imageness.img} alt="" />
         ))}
+        <div>
+        
+        </div>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import '../styles/Cards.css';
 import 'swiper/css';
 import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
+import '../styles/slider.css';
 
 export const HomePage = () => {
     const [data, setData] = useState([]);
@@ -79,6 +80,7 @@ export const HomePage = () => {
                     }
                 </Swiper>
             </div>
+
             <Footer />
         </>
     )

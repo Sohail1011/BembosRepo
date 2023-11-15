@@ -11,6 +11,7 @@ import { MenuPage } from './pages/MenuPage.jsx';
 import { PromotionsPage } from './pages/PromotionsPage.jsx';
 import { BurgerPage } from './pages/BurgerPage.jsx';
 import { BurgerChildren } from './pages/BurgerChildren.jsx';
+import { Listado } from './components/Listado.jsx';
 
 const routes = createBrowserRouter([
   {
@@ -34,15 +35,14 @@ const routes = createBrowserRouter([
     element: <BurgerPage />,
     children: [
       {
+        index:true,element: <Listado/>
+      },
+      {
         path: "contacts/:contactid",
         element: <BurgerChildren />
       },
     ],
   },
-  // {
-  //   path: "/burgerchildren",
-  //   element: <BurgerChildren/>,
-  // }
 
 
 ])
