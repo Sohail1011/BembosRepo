@@ -3,8 +3,9 @@ import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { Anuncios } from "../components/Anuncios"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Grid, Navigation } from "swiper/modules";
+import { Grid, Navigation, Scrollbar } from "swiper/modules";
 import { CgUser } from 'react-icons/cg';
+import '../styles/Promotions.css'
 
 export const PromotionsPage = () => {
 
@@ -44,17 +45,22 @@ export const PromotionsPage = () => {
                         grid={{
                             rows: 2,
                         }}
+                        scrollbar={{
+                            hide: true
+                        }}
                         navigation={true}
                         modules={[
                             Grid,
-                            Navigation
+                            Navigation,
+                            Scrollbar
                         ]}
                         className="refrescos"
                     >
                         {
                             personal.map((p) => (
-                                <SwiperSlide key={p.id}>
-                                    <div>{p.nombre}</div>
+                                <SwiperSlide key={p.id} className="cuchara">
+                                    <h4>{p.nombre}</h4>
+                                    <img src={p.img} alt="" />
                                 </SwiperSlide>))
                         }
                     </Swiper>

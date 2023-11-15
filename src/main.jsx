@@ -4,6 +4,7 @@ import './index.css'
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 import { HomePage } from './pages/HomePage.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { BeneficsPage } from './pages/BeneficsPage.jsx';
@@ -35,7 +36,7 @@ const routes = createBrowserRouter([
     element: <BurgerPage />,
     children: [
       {
-        index:true,element: <Listado/>
+        index: true, element: <Listado />
       },
       {
         path: "contacts/:contactid",
