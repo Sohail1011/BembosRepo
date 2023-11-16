@@ -1,17 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
 export const Listado = () => {
-
 
     const [burger, setBurger] = useState([]);
 
     const getBurger = async () => {
         const response = await fetch("http://localhost:3000/productos");
         const dataBurger = await response.json();
-        console.log(dataBurger)
         setBurger(dataBurger[0].hamburguesas);
-
     }
 
     useEffect(() => {

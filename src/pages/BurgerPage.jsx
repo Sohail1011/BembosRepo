@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
-
 import "../styles/Burger.css"
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 export const BurgerPage = () => {
     // const [burger, setBurger] = useState([]);
@@ -31,10 +29,10 @@ export const BurgerPage = () => {
 
     return (
         <>
-            <Header/>
-            <Outlet/>
-            
-            
+            <Header />
+            <Outlet />
+
+
             <Footer />
         </>
     )
