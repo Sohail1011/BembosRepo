@@ -39,7 +39,7 @@ export const HomePage = () => {
     return (
         <>
             <Header />
-            <Slider />
+            {/* <Slider /> */}
             <Outlet/>
             {/* <div className="container">
                 <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
@@ -83,7 +83,7 @@ export const HomePage = () => {
                 </Swiper>
             </div> */}
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

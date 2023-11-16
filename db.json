@@ -225,6 +225,7 @@
 
           "precio_actual": 30.9,
           "precio_antiguo": 40.6,
+          "texto":"1 Cheese regular, 1 Royal regular, 2 papas regulares. Promoción válida por Cyber Buenazo, del 13 al 19 de noviembre.",
           "id": 44,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-royal-cheese-bb.webp"
         },
@@ -233,6 +234,7 @@
 
           "precio_actual": 14.9,
           "precio_antiguo": 26.8,
+          "texto":"1 A lo pobre mediana + 1 Inca Kola",
           "id": 45,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-a-lo-pobre-oct.webp"
         },
@@ -241,6 +243,7 @@
 
           "precio_actual": 30.9,
           "precio_antiguo": 51.6,
+          "texto":"Doble sabor, doble satisfacción. El Combo Extrema Doble (2 hamburguesas doble carne) es perfecto para los más temerarios:",
           "id": 46,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-duo-extrema.webp"
         },
@@ -249,6 +252,7 @@
 
           "precio_actual": 57.9,
           "precio_antiguo": 91.2,
+          "texto":"2 Extremas regulares, 2 Cheese regulares, 4 papas regulares. Promoción válida por Cyber Buenazo, del 13 al 19 de noviembre.",
           "id": 47,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-extremadamente-cheesy-bb.webp"
         },
@@ -257,6 +261,7 @@
 
           "precio_actual": 54.9,
           "precio_antiguo": 85.2,
+          "texto":"2 Clásicas regulares, 2 Parrilleras regulares, 4 papas regulares. Promoción válida por Cyber Buenazo, del 13 al 19 de noviembre.",
           "id": 48,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-familiar-parrillero-bb.webp"
         },
@@ -265,6 +270,7 @@
 
           "precio_actual": 18.9,
           "precio_antiguo": 28.7,
+          "texto":"Compra en bembos una deliciosa hamburguesa y helado a un precio inmejorable.",
           "id": 49,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-parrillera-mini-princesa.webp"
         },
@@ -273,6 +279,7 @@
 
           "precio_actual": 19.9,
           "precio_antiguo": 30.3,
+          "texto":"Disfruta de una rica hamburguesa con nuggets en Bembos",
           "id": 50,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/8/0/800x1370-combo-interbank-oct.webp"
         },
@@ -282,6 +289,7 @@
 
           "precio_actual": 49.9,
           "precio_antiguo": 83.2,
+          "texto":"¡Llegó la hora de disfrutar con la familia! Este super combo es ideal para cualquier momento",
           "id": 51,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/f/a/familiar-1-bembos.webp"
         },
@@ -291,6 +299,7 @@
 
           "precio_actual": 16.9,
           "precio_antiguo": 27.7,
+          "texto":"¡Disfruta de nuestra famosa hamburguesa con mayonesa de chimichurri con la promo Churrita! Contiene:",
           "id": 52,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/h/churrita-base-individual.webp"
         },
@@ -299,6 +308,7 @@
 
           "precio_actual": 12.9,
           "precio_antiguo": 19.8,
+          "texto":"Disfruta de una clásica hamburguesa a la parrilla con queso, lechuga y tomate. Acompañada de unas papas fritas medianas. Agrándalas y disfruta con la bebida de tu elección.",
           "id": 53,
           "img": "https://www.bembos.com.pe/_ipx/q_85,w_275/https://d31npzejelj8v1.cloudfront.net/media/catalog/product/c/o/combo-cheese-nuevo.webp"
         }
