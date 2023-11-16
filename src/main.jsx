@@ -14,7 +14,7 @@ import { BurgerPage } from './pages/BurgerPage.jsx';
 import { BurgerChildren } from './pages/BurgerChildren.jsx';
 import { Listado } from './components/Listado.jsx';
 import { ListaOne } from './components/ListaOne.jsx';
-import { BeneficsChildren } from './pages/BeneficsChildren.jsx';
+import { HomeChildren } from './pages/HomeChildren.jsx';
 
 const routes = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ const routes = createBrowserRouter([
       },
       {
         path:"cards/:id",
-        element: <BeneficsChildren/>
+        element: <HomeChildren/>
       }
     ]
   },
