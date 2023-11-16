@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import { Footer } from "../components/Footer";
-import { Cards } from "../components/Cards";
-import { Swiper, SwiperSlide } from 'swiper/react';
+//import { Cards } from "../components/Cards";
+//import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/Home.css';
 import '../styles/Cards.css';
 import 'swiper/css';
 import { Header } from "../components/Header";
-import { Slider } from "../components/Slider";
 import '../styles/slider.css';
 import { Outlet } from "react-router-dom";
 
@@ -39,8 +38,7 @@ export const HomePage = () => {
     return (
         <>
             <Header />
-            <Slider />
-            <Outlet/>
+            <Outlet />
             {/* <div className="container">
                 <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
                 <Swiper 
@@ -82,7 +80,6 @@ export const HomePage = () => {
                     }
                 </Swiper>
             </div> */}
-
             <Footer />
         </>
     )

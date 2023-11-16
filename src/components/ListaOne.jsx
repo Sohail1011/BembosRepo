@@ -11,6 +11,7 @@ import '../styles/Home.css';
 import '../styles/Cards.css';
 import 'swiper/css';
 import '../styles/slider.css';
+import { Slider } from "./Slider";
 
 
 export const ListaOne = () => {
@@ -42,6 +43,7 @@ export const ListaOne = () => {
 
     return (
         <>
+            <Slider />
             <div className="container">
                 <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
                 <Swiper
