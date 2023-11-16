@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 
-.ContainerFloranteBurger{
+.ContainerFloranteBurger {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -12,19 +11,19 @@
     font-size: 0.8rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position:fixed;
+    position: fixed;
     width: 100%;
     /* margin: 2rem auto 2rem auto; */
     z-index: 9;
     /* position: relative; */
 }
 
-.noneFlotante{
+.noneFlotante {
     /* border-radius: 15px;
     width: 80%; */
 }
 
-.itemBurger{
+.itemBurger {
     margin-left: 3rem;
     font-weight: 500;
     /* border: 2px solid red; */
@@ -32,19 +31,19 @@
     cursor: pointer;
 }
 
-.burger{
+.burger {
     background-color: #ffb500;
     border-radius: 50px;
 }
 
-.itemBurger:hover{
+.itemBurger:hover {
     border-radius: 50px;
-    background-color:#f0f0f0 ;
+    background-color: #f0f0f0;
     color: #4469a5;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.containerPadreBurger{
+.containerPadreBurger {
     background-color: white;
     width: 70%;
     margin: 0 auto;
@@ -55,7 +54,7 @@
     margin-top: 6rem;
 }
 
-.TitleOneBurger{
+.TitleOneBurger {
     width: 80%;
     margin: 0 auto;
     padding-top: 2rem;
@@ -63,62 +62,61 @@
     color: #21388b;
 }
 
-.gridBurgerPage{
+.gridBurgerPage {
     width: 70%;
-    margin: 0 auto;
+    margin-left: 7rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 60px;
     margin-top: 3rem;
-    
 }
 
-.containerBurgerCards{
+.containerBurgerCards {
     overflow: hidden;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     height: 500px;
-    
+    width: 21rem;
 }
 
-.imgBurger{
+.imgBurger {
     width: 100%;
     height: 50%;
-    object-fit:cover;
-    
+    object-fit: cover;
+
     transition: all .5s;
     /* height: 250px; */
 }
 
-.imgBurger:hover{
-    transform:scale(1.2);
+.imgBurger:hover {
+    transform: scale(1.2);
 }
 
-.containerTextBurger{
+.containerTextBurger {
     position: relative;
     background-color: white;
     padding: 1rem;
     text-align: center;
 }
 
-.titleCardBurger{
+.titleCardBurger {
     font-weight: 500;
     font-size: 1.3rem;
     letter-spacing: -1px;
 }
 
-.precioBurger{
+.precioBurger {
     font-size: 2rem;
     font-weight: 500;
 }
 
-.enlaceCardBurger{
+.enlaceCardBurger {
     font-weight: 900;
     margin-bottom: 2rem;
 }
 
-.btnBurger{
+.btnBurger {
     position: absolute;
     margin-left: 2rem;
     padding: 10px 6rem;
@@ -130,40 +128,40 @@
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.containerTitlePreguntas{
+.containerTitlePreguntas {
     /* background-color: red; */
     width: 70%;
     margin: 0 auto;
 }
 
-.titleTextPreguntasBurger{
+.titleTextPreguntasBurger {
     font-size: 1.8rem;
     color: #193694;
     margin-top: 3rem;
 }
 
-.textPreguntasBurger{
+.textPreguntasBurger {
     color: #97998f;
     font-family: none;
     margin-top: 2rem;
 }
 
-.titlePreguntasBurger{
+.titlePreguntasBurger {
     text-align: center;
     font-size: 1.8rem;
     color: #193694;
     margin-top: 3rem;
 }
 
-.containerPreguntasBurger{
+.containerPreguntasBurger {
     padding: 1rem;
 }
 
-.preguntasBurger{
+.preguntasBurger {
     padding: 12px;
     border: 1px solid black;
     margin-top: 10px;
