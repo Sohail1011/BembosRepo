@@ -1,5 +1,4 @@
 //import { useEffect, useState } from "react";
-import { Footer } from "../components/Footer";
 //import { Cards } from "../components/Cards";
 //import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/Home.css';
@@ -38,6 +37,7 @@ export const HomePage = () => {
     return (
         <>
             <Header />
+            {/* <Slider /> */}
             <Outlet />
             {/* <div className="container">
                 <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
@@ -80,7 +80,8 @@ export const HomePage = () => {
                     }
                 </Swiper>
             </div> */}
-            <Footer />
+
+            {/* <Footer /> */}
         </>
     )
 }

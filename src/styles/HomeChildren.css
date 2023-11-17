@@ -1,0 +1,79 @@
+.containerFatherChildren{
+    background-color: white;
+}
+
+.textHeaderChildren{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contentHomeChildren{
+    /* background-color: lightblue; */
+    width: 60%;
+    margin: 0 auto;
+}
+
+.conteinerFlexChildren{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenetImgChildren{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.ImgChildren{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.titleChildren{
+    font-size: 2.5rem;
+    color: #23388b;
+    margin-bottom: 2rem;
+}
+
+.textDetailChildren{
+    font-size: 1.1rem;
+    color: #999898bd;
+    font-weight: 700;
+}
+
+.containerPrecioChildren{
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 0;
+    margin-top: 5rem; */
+    /* text-align: center; */
+}
+
+.containerIncrementoChindler{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.btnCantidad{
+    padding: 1rem;
+}
+
+.namberChindler{
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.btnAgregarPrecio{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+
