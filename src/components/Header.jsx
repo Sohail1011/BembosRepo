@@ -13,11 +13,16 @@ import { ProductContext } from '../context/ProductContext';
 export const Header = ({envioData}) => {
 
   const data = useContext(ProductContext);
-  console.log(data)
+  // console.log(data.productState.products.precioAcumulado)
   
   const [active, setActive] = useState(false)
+  const [precioTotal, setPrecioTotal] = useState()
   // const [view, setView] = useState(false)
   // const user = userContext(userContext);
+const funsionTota = ()=>{
+  data
+}
+
 
 
   return (
@@ -118,7 +123,9 @@ export const Header = ({envioData}) => {
               data.productState.products.length > 0 ? <>
                 <div className='cart-product'>
                   <div className='info-cart-product'>
-                    {/* <p>#</p><p>Nombre</p><p>Producto</p><p>Precio</p> */}
+                    <div className='containerHeaderItems'>
+                      <p>Producto</p><p>Nombre</p><p>Cantidad</p><p>Sub total</p>
+                    </div>
                     {data.productState.products.map((x, i) => (
                       <div className='conteinerElementCart'>
                         <img className='imgCartHeader' src={x.data.img} alt="" />
@@ -137,7 +144,7 @@ export const Header = ({envioData}) => {
                 </div>
                 <div className='cart-total'>
                   <h3>Total:</h3>
-                  <span>S/0</span>
+                  <span>S/{precioTotal}</span>
                 </div>
               </> :
                 <p >Selecciona un combo.</p>
