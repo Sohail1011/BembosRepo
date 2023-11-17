@@ -20,7 +20,7 @@ export const HomeChildren = () => {
   const [precio, setPrecio] = useState();
   const [precioAcumulado, setPrecioAcumulado] = useState();
 
-  const [envioData, setEnvioData] = useState([]);
+  // const [envioData, setEnvioData] = useState([]);
 
   const getData = async () => {
       const res = await fetch(`http://localhost:3000/productos`);
@@ -78,7 +78,6 @@ export const HomeChildren = () => {
   
   return (
     <div className='containerFatherChildren'>
-      <DataChildren envioData={envioData}/>
       <div className='textHeaderChildren'>
         <p>Inicio / Promocion / Delivery Hmburguesas</p>
       </div>

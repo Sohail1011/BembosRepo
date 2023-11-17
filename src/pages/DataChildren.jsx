@@ -1,9 +1,9 @@
 import React from 'react'
 import { Header } from '../components/Header'
 
-export const DataChildren = (envioData) => {
+export const DataChildren = () => {
 
-    console.log(envioData)
+
 
 
   return (
