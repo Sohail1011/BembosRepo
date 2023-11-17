@@ -25,7 +25,7 @@
     height: 500px;
     width: 500px;
     overflow: hidden;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .ImgChildren{
@@ -47,33 +47,52 @@
 }
 
 .containerPrecioChildren{
-    background-color: green;
+    background-color: #f6f7f8;
     display: flex;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     /* margin-bottom: 0;
     margin-top: 5rem; */
     /* text-align: center; */
+=======
+    justify-content: center;
+    margin-top: 10rem;
+    height: 100px;
+    align-items: center;
+>>>>>>> b96c002b30ce68d59b660d78bcb20ecbcddd6367
 }
 
 .containerIncrementoChindler{
     display: flex;
+    margin-right: 3rem;
     /* justify-content: center; */
 }
 
 .btnCantidad{
     padding: 1rem;
+    height: 3rem;
+    font-size: 2rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .namberChindler{
     font-size: 1.5rem;
     padding: 1rem;
-    color: white;
+    color: black;
 }
 
 .btnAgregarPrecio{
     padding: 1rem;
     font-size: 1rem;
+    margin-left: 3rem;
+    background-color: #173083;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 

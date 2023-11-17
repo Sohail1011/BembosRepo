@@ -15,6 +15,7 @@ import { BurgerChildren } from './pages/BurgerChildren.jsx';
 import { Listado } from './components/Listado.jsx';
 import { ListaOne } from './components/ListaOne.jsx';
 import { HomeChildren } from './pages/HomeChildren.jsx';
+import { ProductProvider } from './context/ProductProvider.jsx';
 
 const routes = createBrowserRouter([
   {
@@ -61,6 +62,8 @@ const routes = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={routes} />
+    <ProductProvider>
+      <RouterProvider router={routes} />
+    </ProductProvider>
   </React.StrictMode>,
 )

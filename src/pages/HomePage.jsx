@@ -1,6 +1,3 @@
-//import { useEffect, useState } from "react";
-//import { Cards } from "../components/Cards";
-//import { Swiper, SwiperSlide } from 'swiper/react';
 import '../styles/Home.css';
 import '../styles/Cards.css';
 import 'swiper/css';
@@ -8,80 +5,70 @@ import { Header } from "../components/Header";
 import '../styles/slider.css';
 import { Outlet } from "react-router-dom";
 
-export const HomePage = () => {
-    // const [data, setData] = useState([]);
-    // const [menu, setMenu] = useState([]);
+export const HomePage = ({envioData}) => {
 
-    // const getData = async () => {
-    //     const res = await fetch("http://localhost:3000/productos");
-    //     const data = await res.json();
-    //     // console.log(data)
-    //     setData(data[4].promociones_online);
-    // }
+// const {id} = useParams();
 
-    // const getMenu = async () => {
-    //     const response = await fetch("http://localhost:3000/productos");
-    //     const request = await response.json();
-    //     setMenu(request[5].menu);
-    // }
-
-    // useEffect(()=>{
-    //     document.title = "Inicio"
-    // },[])
-
-    // useEffect(() => {
-    //     getData();
-    //     getMenu();
-    // }, []);
+//     const [data, setData] = useState([]);
+//     const [cantidad, setCantidad] = useState(1);
+//     const [precio, setPrecio] = useState();
+//     const [precioAcumulado, setPrecioAcumulado] = useState();
+  
+    
+//     // const [envioData, setEnvioData] = useState([]);
+//     // console.log(envioData)
+    
+// //   console.log(data)
+  
+//     const getData = async () => {
+//         const res = await fetch(`http://localhost:3000/productos`);
+//         const prod = await res.json();
+//         // console.log(users)
+//         // setData(prod);
+//         // console.log(prod[4].promociones_online.find(x => String(x.id) === id));
+//         const productSelected = prod[4].promociones_online.find(x => String(x.id) === id)
+//         setData(productSelected)
+//         // prod.promociones_online
+//     }
+  
+//     // console.log(data)
+//     const getPrecio = async () => {
+//       const res = await fetch(`http://localhost:3000/productos`);
+//       const prod = await res.json();
+//       // console.log(users)
+//       // setData(prod);
+//       // console.log(prod[4].promociones_online.find(x => String(x.id) === id));
+//       const productSelected = prod[4].promociones_online.find(x => String(x.id) === id)
+//       setPrecio(Math.round(productSelected.precio_actual))
+//       setPrecioAcumulado(Math.round(productSelected.precio_actual));
+//       // prod.promociones_online
+//   }
+  
+//     useEffect(() => {
+//         getData();
+//         getPrecio();
+//     }, []);
 
     return (
         <>
-            <Header />
-            {/* <Slider /> */}
-            <Outlet />
-            {/* <div className="container">
-                <h2 className="titleOne">PROMOCIONES DE HAMBURGUESAS</h2>
-                <Swiper 
-                    spaceBetween={1}
-                    slidesPerView={4}
-                    className="personales"
-                >
-                    {
-                        data.map((info) => (
-                            <SwiperSlide key={info.id}>
-                                <div className="containerPaco">
-                                  <div className="containerCardsBembos">
-                                  <Cards data={info} texto={"Ver más"} />
-                                  </div>
-                                </div>
-                            </SwiperSlide>
-                        ))
-                    }
-                </Swiper>
-
-                <h2 className="titleTwo">MENU DE HAMBURGUESAS</h2>
-
-                
-                <Swiper
-                    spaceBetween={1}
-                    slidesPerView={4}
-                    className="personales"
-                >
-                    {
-                        menu.map((anuncio) => (
-                            <SwiperSlide key={anuncio.nombre}>
-                                <div className="containerPaco">
-                                 <div className="containerCardsBembos">
-                                 <Cards data={anuncio} texto={"Ver Todos"} />
-                                 </div>
-                                </div>
-                            </SwiperSlide>
-                        ))
-                    }
-                </Swiper>
-            </div> */}
-
-            {/* <Footer /> */}
+            <Header 
+            // data={data} setData={setData}
+            // cantidad={cantidad} setCantidad={setCantidad}
+            // precio={precio} setPrecio={setPrecio}
+            // precioAcumulado={precioAcumulado} setPrecioAcumulado={setPrecioAcumulado}
+            />
+            <Outlet
+            // data={data} setData={setData}
+            // cantidad={cantidad} setCantidad={setCantidad}
+            // precio={precio} setPrecio={setPrecio}
+            // precioAcumulado={precioAcumulado} setPrecioAcumulado={setPrecioAcumulado}
+            />
+            {/* <HomeChildren
+            data={data} setData={setData}
+            cantidad={cantidad} setCantidad={setCantidad}
+            precio={precio} setPrecio={setPrecio}
+            precioAcumulado={precioAcumulado} setPrecioAcumulado={setPrecioAcumulado}
+            /> */}
         </>
     )
 }
