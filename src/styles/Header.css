@@ -153,7 +153,7 @@
     position: absolute;
     background-color: #ffffff;
     width: 500px;
-    height: 300px;
+    height: 800px;
     z-index: 3;
     font-size: 1.3rem;
     font-weight: bold;
@@ -161,6 +161,22 @@
     padding: 1rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
     border-radius: 10px;
+}
+
+.imgCartHeader{
+    width: 100px;
+    height: 100px;
+
+}
+
+.conteinerElementCart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-cart-product{
+    display: flex;
+    flex-direction: column;
 }
 
 .cart-total {
@@ -172,6 +188,8 @@
 .hiden-cart {
     display: none;
 }
+
+
 
 /*ENLACES HOVER*/
 

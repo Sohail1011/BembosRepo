@@ -1,16 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-
 import "../styles/HomeChildren.css"
+import { Header } from '../components/Header';
+import { DataChildren } from './DataChildren';
+import { ProductContext } from '../context/ProductContext';
 
+// import  Header  from '../components/Header'; 
+// export const userContext = React.createContext();
+// export {envioData} from "../components/Header"
 export const HomeChildren = () => {
+
+  const {productState, setState} = useContext(ProductContext);
+
+  
+  const {id} = useParams();
+
   const [data, setData] = useState([]);
   const [cantidad, setCantidad] = useState(1);
   const [precio, setPrecio] = useState();
   const [precioAcumulado, setPrecioAcumulado] = useState();
 
-  const {id} = useParams();
-
+  const [envioData, setEnvioData] = useState([]);
 
   const getData = async () => {
       const res = await fetch(`http://localhost:3000/productos`);
@@ -23,6 +33,7 @@ export const HomeChildren = () => {
       // prod.promociones_online
   }
 
+  // console.log(data)
   const getPrecio = async () => {
     const res = await fetch(`http://localhost:3000/productos`);
     const prod = await res.json();
@@ -30,8 +41,8 @@ export const HomeChildren = () => {
     // setData(prod);
     // console.log(prod[4].promociones_online.find(x => String(x.id) === id));
     const productSelected = prod[4].promociones_online.find(x => String(x.id) === id)
-    setPrecio(productSelected.precio_actual)
-    setPrecioAcumulado(productSelected.precio_actual);
+    setPrecio(Math.round(productSelected.precio_actual))
+    setPrecioAcumulado(Math.round(productSelected.precio_actual));
     // prod.promociones_online
 }
 
@@ -42,17 +53,32 @@ export const HomeChildren = () => {
   
   const handelRestar = () => {
     cantidad > 1 && setCantidad(cantidad - 1)
-    precioAcumulado >= precio && setPrecioAcumulado(Math.round(precioAcumulado - precio))
+    precioAcumulado > precio && setPrecioAcumulado(Math.round(precioAcumulado - precio))
     setPrecio(precio )
   }
 
   const handelSumar = () => {
     setCantidad(cantidad + 1)
-     setPrecioAcumulado(Math.round(precioAcumulado + precio))
+     setPrecioAcumulado(precioAcumulado + precio)
   }
+
+  // data.nuevo_precio = precioAcumulado
+  // console.log(data)
+
+  // const data2 = ([...data, precioAcumulado])
+
+  // console.log(data2)
+
+  const funsionEnviar = () => {
+    setState({...productState, products: [...productState.products, {data: data, precioAcumulado: precioAcumulado, cantidad: cantidad}]});
+    // setEnvioData(data.nuevo_precio = precioAcumulado)
+    // setEnvioData(data)
+  }
+  // console.log(envioData)
   
   return (
     <div className='containerFatherChildren'>
+      <DataChildren envioData={envioData}/>
       <div className='textHeaderChildren'>
         <p>Inicio / Promocion / Delivery Hmburguesas</p>
       </div>
@@ -74,9 +100,13 @@ export const HomeChildren = () => {
           <button className='btnCantidad' onClick={handelSumar}>+</button>
         </div>
         <div>
-          <button className='btnAgregarPrecio'>AGREGAR S/{precioAcumulado}</button>
+          {/* <userContext.Provider value={envioData}> */}
+            <button onClick={funsionEnviar} className='btnAgregarPrecio'>AGREGAR S/{precioAcumulado}</button>
+          {/* </userContext.Provider> */}
         </div>
       </div>  
     </div>
   )
 }
+
+

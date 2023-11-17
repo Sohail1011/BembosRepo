@@ -1,16 +1,24 @@
 import { RiShoppingCartFill } from 'react-icons/ri';
 import { MdLocalDining } from 'react-icons/md';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 import { BiPhone, BiUser } from "react-icons/bi";
 import '../styles/Header.css';
 import SVGComponent from "../assets/SVGComponent";
 import { Link } from 'react-router-dom';
+import { ProductContext } from '../context/ProductContext';
 
-export const Header = () => {
+// import { userContext } from '../pages/HomeChildren';
 
+export const Header = ({envioData}) => {
+
+  const data = useContext(ProductContext);
+  console.log(data)
+  
   const [active, setActive] = useState(false)
-  const [view, setView] = useState(false)
+  // const [view, setView] = useState(false)
+  // const user = userContext(userContext);
+
 
   return (
     <header className="principal" >
@@ -46,6 +54,9 @@ export const Header = () => {
           </section>
         </article>
       </nav>
+
+     
+     
       <article className='enlaces'>
         <section className="zonas">
           <ul>
@@ -104,10 +115,20 @@ export const Header = () => {
             {/* {cart.length ? (
             <> */}
             {
-              view ? <>
+              data.productState.products.length > 0 ? <>
                 <div className='cart-product'>
                   <div className='info-cart-product'>
-                    <p>#</p><p>Nombre</p><p>Producto</p><p>Precio</p>
+                    {/* <p>#</p><p>Nombre</p><p>Producto</p><p>Precio</p> */}
+                    {data.productState.products.map((x, i) => (
+                      <div className='conteinerElementCart'>
+                        <img className='imgCartHeader' src={x.data.img} alt="" />
+                        <div key={i}>{x.data.nombre}</div>
+                        <p>{x.cantidad}</p>
+                        <p>S/{x.precioAcumulado}</p>
+
+                      </div>
+
+                    ))}
 
                     {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="icon-close">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
