@@ -16,14 +16,25 @@ export const Header = ({envioData}) => {
   // console.log(data.productState.products.precioAcumulado)
   
   const [active, setActive] = useState(false)
-  const [precioTotal, setPrecioTotal] = useState()
+  const [precioTotal, setPrecioTotal] = useState([])
   // const [view, setView] = useState(false)
   // const user = userContext(userContext);
-const funsionTota = ()=>{
-  data
-}
+  // console.log(data.productState.products)
 
+  // let precioToalTotal = []
+  let sumaPrecio = 0;
+  data.productState.products.forEach(function(precio) {
+    // setPrecioTotal(precio.precioAcumulado)
+    // console.log(precio.precioAcumulado)
+    sumaPrecio += precio.precioAcumulado;
+  })
 
+  console.log(sumaPrecio)
+  
+
+// const funsionTota = ()=>{
+//   data
+// }
 
   return (
     <header className="principal" >
@@ -122,14 +133,14 @@ const funsionTota = ()=>{
             {
               data.productState.products.length > 0 ? <>
                 <div className='cart-product'>
-                  <div className='info-cart-product'>
+                  <div className='info-cart-product' >
                     <div className='containerHeaderItems'>
                       <p>Producto</p><p>Nombre</p><p>Cantidad</p><p>Sub total</p>
                     </div>
                     {data.productState.products.map((x, i) => (
                       <div className='conteinerElementCart'>
                         <img className='imgCartHeader' src={x.data.img} alt="" />
-                        <div key={i}>{x.data.nombre}</div>
+                        <div key={i.id}>{x.data.nombre}</div>
                         <p>{x.cantidad}</p>
                         <p>S/{x.precioAcumulado}</p>
 
@@ -144,7 +155,7 @@ const funsionTota = ()=>{
                 </div>
                 <div className='cart-total'>
                   <h3>Total:</h3>
-                  <span>S/{precioTotal}</span>
+                  <span>S/{sumaPrecio}</span>
                 </div>
               </> :
                 <p >Selecciona un combo.</p>
