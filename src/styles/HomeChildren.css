@@ -1,4 +1,3 @@
-
 .containerFatherChildren{
     background-color: white;
 }
@@ -50,10 +49,18 @@
 .containerPrecioChildren{
     background-color: #f6f7f8;
     display: flex;
+<<<<<<< HEAD
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 0;
+    margin-top: 5rem; */
+    /* text-align: center; */
+=======
     justify-content: center;
     margin-top: 10rem;
     height: 100px;
     align-items: center;
+>>>>>>> b96c002b30ce68d59b660d78bcb20ecbcddd6367
 }
 
 .containerIncrementoChindler{

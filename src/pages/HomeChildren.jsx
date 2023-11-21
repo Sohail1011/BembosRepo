@@ -10,10 +10,10 @@ import { ProductContext } from '../context/ProductContext';
 // export {envioData} from "../components/Header"
 export const HomeChildren = () => {
 
-  const {productState, setState} = useContext(ProductContext);
+  const { productState, setState } = useContext(ProductContext);
 
-  
-  const {id} = useParams();
+
+  const { id } = useParams();
 
   const [data, setData] = useState([]);
   const [cantidad, setCantidad] = useState(1);
@@ -23,14 +23,14 @@ export const HomeChildren = () => {
   // const [envioData, setEnvioData] = useState([]);
 
   const getData = async () => {
-      const res = await fetch(`http://localhost:3000/productos`);
-      const prod = await res.json();
-      // console.log(users)
-      // setData(prod);
-      // console.log(prod[4].promociones_online.find(x => String(x.id) === id));
-      const productSelected = prod[4].promociones_online.find(x => String(x.id) === id)
-      setData(productSelected)
-      // prod.promociones_online
+    const res = await fetch(`http://localhost:3000/productos`);
+    const prod = await res.json();
+    // console.log(users)
+    // setData(prod);
+    // console.log(prod[4].promociones_online.find(x => String(x.id) === id));
+    const productSelected = prod[4].promociones_online.find(x => String(x.id) === id)
+    setData(productSelected)
+    // prod.promociones_online
   }
 
   // console.log(data)
@@ -44,22 +44,22 @@ export const HomeChildren = () => {
     setPrecio(Math.round(productSelected.precio_actual))
     setPrecioAcumulado(Math.round(productSelected.precio_actual));
     // prod.promociones_online
-}
+  }
 
   useEffect(() => {
-      getData();
-      getPrecio();
+    getData();
+    getPrecio();
   }, []);
-  
+
   const handelRestar = () => {
     cantidad > 1 && setCantidad(cantidad - 1)
     precioAcumulado > precio && setPrecioAcumulado(Math.round(precioAcumulado - precio))
-    setPrecio(precio )
+    setPrecio(precio)
   }
 
   const handelSumar = () => {
     setCantidad(cantidad + 1)
-     setPrecioAcumulado(precioAcumulado + precio)
+    setPrecioAcumulado(precioAcumulado + precio)
   }
 
   // data.nuevo_precio = precioAcumulado
@@ -70,14 +70,18 @@ export const HomeChildren = () => {
   // console.log(data2)
 
   const funsionEnviar = () => {
-    setState({...productState, products: [...productState.products, {data: data, precioAcumulado: precioAcumulado, cantidad: cantidad}]});
+    setState({ ...productState, products: [...productState.products, { data: data, precioAcumulado: precioAcumulado, cantidad: cantidad }] });
     // setEnvioData(data.nuevo_precio = precioAcumulado)
     // setEnvioData(data)
   }
   // console.log(envioData)
-  
+
   return (
     <div className='containerFatherChildren'>
+<<<<<<< HEAD
+      <DataChildren envioData={envioData} />
+=======
+>>>>>>> c367217043c2b71469826ede429f2c808e57cad3
       <div className='textHeaderChildren'>
         <p>Inicio / Promocion / Delivery Hmburguesas</p>
       </div>
@@ -90,7 +94,7 @@ export const HomeChildren = () => {
             <h2 className='titleChildren'>{data.nombre}</h2>
             <p className='textDetailChildren'>{data.texto}</p>
           </div>
-        </div>  
+        </div>
       </div>
       <div className='containerPrecioChildren'>
         <div className='containerIncrementoChindler'>
@@ -100,10 +104,10 @@ export const HomeChildren = () => {
         </div>
         <div>
           {/* <userContext.Provider value={envioData}> */}
-            <button onClick={funsionEnviar} className='btnAgregarPrecio'>AGREGAR S/{precioAcumulado}</button>
+          <button onClick={funsionEnviar} className='btnAgregarPrecio'>AGREGAR S/{precioAcumulado}</button>
           {/* </userContext.Provider> */}
         </div>
-      </div>  
+      </div>
     </div>
   )
 }

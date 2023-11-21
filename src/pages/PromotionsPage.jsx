@@ -59,8 +59,10 @@ export const PromotionsPage = () => {
                         {
                             personal.map((p) => (
                                 <SwiperSlide key={p.id} className="cuchara">
-                                    <h4>{p.nombre}</h4>
-                                    <img src={p.img} alt="" />
+                                    <div className="cuchara-texto">
+                                        <h4>{p.nombre}</h4>
+                                    </div>
+
                                 </SwiperSlide>))
                         }
                     </Swiper>
